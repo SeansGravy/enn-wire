@@ -47,5 +47,16 @@ Applied to the stories we cover **and to our own coverage**. Methodology lives
 in `push/METHODOLOGY.md`; every score cites its inputs. Inspired by prior
 narrative-coordination research; independently designed and scored.
 
+## Talk to the desk
+
+This is also the network's front door — pick a lane:
+
+- **[📨 File a tip](../../issues/new?template=1-file-a-tip.yml)** — point the desk at a story
+- **[⚖️ We got something wrong](../../issues/new?template=2-report-an-error.yml)** — challenge aired copy; accepted corrections publish permanently
+- **[📡 Transmission problem](../../issues/new?template=3-transmission-problem.yml)** — tell master control the stream is broken
+
+Everything filed is public, which is the point: tips, challenges, and our
+responses are part of the auditable record.
+
 ---
 *ENN — Where the OSINT points. No favorites.* · [@SeansGravy](https://x.com/SeansGravy)

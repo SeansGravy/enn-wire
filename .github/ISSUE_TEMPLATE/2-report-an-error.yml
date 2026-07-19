@@ -1,0 +1,24 @@
+name: "⚖️ We got something wrong"
+description: "Challenge a claim we aired. Corrections are public and permanent."
+title: "correction: "
+labels: ["correction-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **We keep score on ourselves.** If we aired something wrong, say so here —
+        accepted corrections are published in `corrections/` and never deleted.
+  - type: input
+    id: when
+    attributes:
+      label: When did it air (roughly)?
+      placeholder: "Jul 19, around 3pm ET / the Hormuz segment"
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: What did we get wrong, and what's your evidence?
+      placeholder: "The claim, and the source that contradicts it."
+    validations:
+      required: true

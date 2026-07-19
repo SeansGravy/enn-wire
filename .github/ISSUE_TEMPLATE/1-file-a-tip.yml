@@ -1,0 +1,30 @@
+name: "📨 File a tip"
+description: "Seen something the desk should chase? Point us at it."
+title: "tip: "
+labels: ["viewer-tip"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **You're talking to the newsroom.** Tips are read by the desk and judged
+        on evidence, not who sent them. If it airs, the story credits the sourcing.
+  - type: input
+    id: link
+    attributes:
+      label: Link to the post / source
+      placeholder: "https://x.com/..."
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      placeholder: "What's the story here? What should we verify?"
+    validations:
+      required: true
+  - type: dropdown
+    id: push
+    attributes:
+      label: Does this wave feel pushed?
+      description: "Gut call — is this organic, or does it smell coordinated?"
+      options: ["No idea", "Feels organic", "Feels pushed / coordinated", "It's drowning out something bigger"]

@@ -1,0 +1,24 @@
+name: "📡 Transmission problem"
+description: "Stream down, frozen, silent, out of sync — tell master control."
+title: "transmission: "
+labels: ["transmission"]
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Where were you watching?
+      options: ["X", "Rumble", "YouTube", "Twitch", "Other"]
+    validations:
+      required: true
+  - type: dropdown
+    id: symptom
+    attributes:
+      label: What's wrong?
+      options: ["No video", "Frozen picture", "No audio", "Audio/video out of sync", "Same segments repeating", "Something else"]
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: When (your local time + timezone)
+      placeholder: "3:40pm ET"
