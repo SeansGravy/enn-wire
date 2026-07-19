@@ -14,6 +14,8 @@ timestamp authority.
 | `corrections/` | Corrections log — amendments to aired copy, never deletions | at correction |
 | `push/` | The PUSH Index — ENN's own coordination score (versioned methodology + per-story scores, including scores of ENN's own coverage) | at scoring |
 | `rundown/` | On-air rundown history — what aired, when | daily |
+| `air/` | Broadcast audit — airing ledger exports, uptime/continuity telemetry (segment counts, outage windows, honest degradation notes) | daily |
+| `ad-proofs/` | Ad air receipts — per-spot airing record: timestamp, slot, frame grab from the live tap, airing count vs. booked | at airing |
 
 ## Ground rules
 
@@ -22,6 +24,11 @@ timestamp authority.
   the board, which is what makes the hits mean something.
 - **Anons are judged by evidence, not avatars.** Source handles are credited;
   private individuals are not doxxed.
+- **Ad receipts are verifiable.** Every sponsor spot's airing is committed with
+  a frame grab pulled from the live output (pixels, not logs) — an invoice you
+  can audit yourself.
+- **Telemetry is honest.** Outages and degradation windows are published, not
+  hidden; a network that shows its downtime earns its uptime.
 - **Not here by design:** newsroom session transcripts, review-gate internals,
   and infrastructure — publishing those would let the instrument be gamed.
 
