@@ -12,7 +12,7 @@ timestamp authority.
 | `drops/` | Sanitized scout story-drops: headline, context, category, velocity/controversy scores, source links | at ingest |
 | `ledger/` | The prediction ledger — every on-air call, filed live, resolved honestly (confirmed / missed) | at filing (live) |
 | `corrections/` | Corrections log — amendments to aired copy, never deletions | at correction |
-| `nci/` | Narrative Coordination Index — versioned methodology + per-story scores, including scores of ENN's own coverage | at scoring |
+| `push/` | The PUSH Index — ENN's own coordination score (versioned methodology + per-story scores, including scores of ENN's own coverage) | at scoring |
 | `rundown/` | On-air rundown history — what aired, when | daily |
 
 ## Ground rules
@@ -25,13 +25,20 @@ timestamp authority.
 - **Not here by design:** newsroom session transcripts, review-gate internals,
   and infrastructure — publishing those would let the instrument be gamed.
 
-## NCI — Narrative Coordination Index
+## The PUSH Index
 
-A published, versioned scoring of how *manufactured* a narrative wave looks:
-same-clip amplification rate, account-age clustering, cross-account copy
-similarity, timing bursts. Applied to the stories we cover **and to our own
-coverage** — the methodology lives in `nci/METHODOLOGY.md`, and every score
-cites its inputs.
+ENN's own published, versioned scoring of how *manufactured* a narrative wave
+looks — 0–100:
+
+- **P — Propagation:** spread velocity vs. organic baselines
+- **U — Uniformity:** cross-account copy/clip similarity
+- **S — Synchrony:** timing bursts + account-age clustering
+- **H — History:** what the wave drowns out, and the amplifiers' track records
+  from ENN's own archive
+
+Applied to the stories we cover **and to our own coverage**. Methodology lives
+in `push/METHODOLOGY.md`; every score cites its inputs. Inspired by prior
+narrative-coordination research; independently designed and scored.
 
 ---
 *ENN — Where the OSINT points. No favorites.* · [@SeansGravy](https://x.com/SeansGravy)
