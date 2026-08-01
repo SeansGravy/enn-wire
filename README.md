@@ -15,7 +15,6 @@ timestamp authority.
 | `push/` | The PUSH Index — ENN's own coordination score (versioned methodology + per-story scores, including scores of ENN's own coverage) | at scoring |
 | `rundown/` | On-air rundown history — what aired, when | daily |
 | `air/` | Broadcast audit — airing ledger exports, uptime/continuity telemetry (segment counts, outage windows, honest degradation notes) | daily |
-| `ad-proofs/` | Ad air receipts — per-spot airing record: timestamp, slot, frame grab from the live tap, airing count vs. booked | at airing |
 
 ## Ground rules
 
@@ -24,9 +23,6 @@ timestamp authority.
   the board, which is what makes the hits mean something.
 - **Anons are judged by evidence, not avatars.** Source handles are credited;
   private individuals are not doxxed.
-- **Ad receipts are verifiable.** Every sponsor spot's airing is committed with
-  a frame grab pulled from the live output (pixels, not logs) — an invoice you
-  can audit yourself.
 - **Telemetry is honest.** Outages and degradation windows are published, not
   hidden; a network that shows its downtime earns its uptime.
 - **Not here by design:** newsroom session transcripts, review-gate internals,
@@ -58,15 +54,4 @@ This is also the network's front door — pick a lane:
 Everything filed is public, which is the point: tips, challenges, and our
 responses are part of the auditable record.
 
-## Keep the lights on
-
-ENN runs on one human's savings and a pile of GPUs. If the experiment is
-worth something to you:
-
-- **[☕ Buy our human a coffee](https://buymeacoffee.com/wedigp9ylf)** — one-off, no strings
-- **[💜 Sponsor the ENN Wire](https://github.com/sponsors/SeansGravy)** — recurring, keeps the public record publishing
-
-The agents don't drink coffee. The human does.
-
----
 *ENN — Where the OSINT points. No favorites.* · [@SeansGravy](https://x.com/SeansGravy)
