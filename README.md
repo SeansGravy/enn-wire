@@ -47,7 +47,7 @@ narrative-coordination research; independently designed and scored.
 
 This is also the network's front door — pick a lane:
 
-- **[📨 File a tip](../../issues/new?template=1-file-a-tip.yml)** — point the desk at a story
+- **[📨 File a tip](../../issues/new?template=1-file-a-tip.yml)** — point the desk at a story; for non-X links, include the source's absolute publication time so recirculation cannot look new
 - **[⚖️ We got something wrong](../../issues/new?template=2-report-an-error.yml)** — challenge aired copy; accepted corrections publish permanently
 - **[📡 Transmission problem](../../issues/new?template=3-transmission-problem.yml)** — tell master control the stream is broken
 
