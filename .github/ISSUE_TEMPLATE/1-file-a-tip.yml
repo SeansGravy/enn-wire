@@ -15,6 +15,12 @@ body:
       placeholder: "https://x.com/..."
     validations:
       required: true
+  - type: input
+    id: source_published_at
+    attributes:
+      label: Source published at
+      description: "Required for non-X links. Use the source's absolute date and time with timezone. Canonical X status links carry their own timestamp."
+      placeholder: "2026-08-04T18:30:00Z"
   - type: textarea
     id: why
     attributes:
